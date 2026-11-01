@@ -1,0 +1,23 @@
+# AdGuard Home runtime data: admin credentials, query logs (private browsing
+# history), filter/config state. Never commit this.
+data/
+
+# Secrets / local config — anything matching *.env except the checked-in
+# template is assumed sensitive (webhook URLs, tokens, API keys, etc).
+*.env
+!*.env.example
+.env*
+!.env*.example
+
+# Common credential/key file patterns, in case any show up later.
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*.json
+*secrets*
+
+# OS/editor junk.
+.DS_Store
+.idea/
+.vscode/
