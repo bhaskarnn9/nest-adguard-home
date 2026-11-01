@@ -60,6 +60,10 @@ Runs periodically (intended via the launchd job, every 5 minutes) and does, in o
 
 State is tracked in small flag files under `data/.watchdog_*` so Discord only gets notified on *transitions*, not spammed every 5 minutes while something stays broken.
 
+Example notifications from a real Discord channel, covering an outage/restart cycle, an update alert, and a restart that didn't fix the issue followed by a working-fallback notice:
+
+![Watchdog Discord notifications](assets/discord-watchdog-notifications.png)
+
 **Setup (one-time):**
 1. Copy the template and fill in your real values:
    ```bash
